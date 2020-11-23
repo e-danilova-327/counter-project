@@ -5,5 +5,9 @@ function plusOne() {
 }
 
 function minusOne() {
-    document.getElementById('intNumb').value = i--;
+    if (i>0) {
+        document.getElementById('intNumb').value = i--;}
+    else {
+        alert("Counter should be a positive number!");
+    }
 }
